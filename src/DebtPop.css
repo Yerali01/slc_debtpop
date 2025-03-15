@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+  font-family: "Work Sans", "Noto Sans", sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Layout */
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.layout-content-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 512px;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Header */
+h3 {
+  color: #171111;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #171111;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Input Fields */
+.input-container {
+  margin-bottom: 15px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+p {
+  color: #171111;
+  font-size: 1rem;
+  font-weight: medium;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  height: 56px;
+  border: 1px solid #e5dcdc;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 1rem;
+  color: #171111;
+  background-color: #ffffff;
+  outline: none;
+}
+
+input {
+  width: 94%;
+}
+
+input::placeholder {
+  color: #876464;
+}
+
+/* Select Dropdown */
+select {
+  width: 100%;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2724px%27 height=%2724px%27 fill=%27rgb(135,100,100)%27 viewBox=%270 0 256 256%27%3e%3cpath d=%27M181.66,170.34a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-48-48a8,8,0,0,1,11.32-11.32L128,212.69l42.34-42.35A8,8,0,0,1,181.66,170.34Zm-96-84.68L128,43.31l42.34,42.35a8,8,0,0,0,11.32-11.32l-48-48a8,8,0,0,0-11.32,0l-48,48A8,8,0,0,0,85.66,85.66Z%27%3e%3c/path%3e%3c/svg%3e");
+  background-position: right 15px center;
+  background-repeat: no-repeat;
+}
+
+/* Banner Section */
+.banner {
+  width: 100%;
+  height: 160px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* Results Section */
+.results-section {
+  margin: 20px 0;
+  padding: 16px;
+  background-color: #faf7f7;
+  border-radius: 12px;
+}
+
+/* Price Summary */
+.price-summary {
+  padding-bottom: 10px;
+}
+
+.price-summary div {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 1rem;
+}
+
+.price-summary p {
+  margin: 0;
+}
+
+.price-summary p:first-child {
+  color: #876464;
+}
+
+.price-summary p:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Recommendations Section */
+.recommendations-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.loading-recommendations {
+  text-align: center;
+  padding: 20px;
+  color: #876464;
+  font-style: italic;
+  background-color: #faf7f7;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+/* Hints Section */
+.hint-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #f4f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hint-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hint-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f0f0;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.hint-text {
+  color: #171111;
+  font-size: 1rem;
+  flex: 1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Button */
+.button-container {
+  margin: 20px 0;
+}
+
+button {
+  background-color: #df2020;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #c81b1b;
+}
+
+button:disabled {
+  background-color: #e5dcdc;
+  cursor: not-allowed;
+}
